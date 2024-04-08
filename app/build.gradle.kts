@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.abulnes16.jetpack_with_gemini"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.abulnes16.jetpack_with_gemini"
@@ -50,7 +50,8 @@ android {
 }
 
 dependencies {
-
+    // Dependencies
+    val navVersion = "2.7.7"
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.activity:activity-compose:1.8.2")
@@ -66,4 +67,8 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+
+    // Navigation
+    implementation("androidx.navigation:navigation-compose:$navVersion")
 }
