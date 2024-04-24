@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">jetpack-with-gemini</string>
+    <string name="app_name">Jetpack Gemini</string>
+
+    <!--Welcome Screen-->
+    <string name="your_ai_assistant">Your AI Assistant</string>
+    <string name="ai_assistant_subtitle">
+        Using this software,you can ask you questions and receive articles using artificial intelligence assistant
+    </string>
+    <string name="welcome_image_description">Welcome AI Assistant Image</string>
+
+    <string name="move_on">Continue</string>
 </resources>

@@ -3,7 +3,7 @@ package com.abulnes16.jetpack_with_gemini.ui.theme
 import androidx.compose.ui.graphics.Color
 
 
-val md_theme_light_primary = Color(0xFF004FE5)
+val md_theme_light_primary = Color(0xFF3369FF)
 val md_theme_light_onPrimary = Color(0xFFFFFFFF)
 val md_theme_light_primaryContainer = Color(0xFFDCE1FF)
 val md_theme_light_onPrimaryContainer = Color(0xFF00164F)
