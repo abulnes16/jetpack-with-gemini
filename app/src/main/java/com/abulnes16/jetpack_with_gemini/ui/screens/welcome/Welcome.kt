@@ -34,7 +34,7 @@ fun WelcomeScreen(onClickContinue: ()-> Unit , modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
             .fillMaxSize()
-            .padding(Spacing.md),
+            .padding(vertical = Spacing.lg, horizontal = Spacing.xl),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceBetween,
     ) {

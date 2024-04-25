@@ -7,6 +7,8 @@
         Using this software,you can ask you questions and receive articles using artificial intelligence assistant
     </string>
     <string name="welcome_image_description">Welcome AI Assistant Image</string>
-
     <string name="move_on">Continue</string>
+    <!--Chat Screen-->
+    <string name="ask_me_anything">Ask Me Anything</string>
+
 </resources>
