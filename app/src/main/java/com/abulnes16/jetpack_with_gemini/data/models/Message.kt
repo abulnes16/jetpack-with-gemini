@@ -3,7 +3,8 @@ package com.abulnes16.jetpack_with_gemini.data.models
 data class Message(
     val content: String,
     val username: String = "",
-    val isMine: Boolean = true
+    val isMine: Boolean = true,
+    val isPending: Boolean = false,
 )
 
 val mockMessages = listOf<Message>(
@@ -14,3 +15,8 @@ val mockMessages = listOf<Message>(
     Message(content = "Aprendamos pues", username = "Angel", isMine = true),
     Message(content = "Si asi es", username = "Gemini", isMine = false),
 )
+
+
+fun List<Message>.removePendingMessages(): List<Message>{
+   return this.filter { !it.isPending }
+}

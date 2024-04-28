@@ -1,12 +1,13 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 android {
     namespace = "com.abulnes16.jetpack_with_gemini"
     compileSdk = 34
-
+    buildFeatures.buildConfig = true // to enable custom build config keys
     defaultConfig {
         applicationId = "com.abulnes16.jetpack_with_gemini"
         minSdk = 24
@@ -59,6 +60,7 @@ dependencies {
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
     implementation("androidx.compose.material3:material3")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -71,4 +73,7 @@ dependencies {
 
     // Navigation
     implementation("androidx.navigation:navigation-compose:$navVersion")
+
+    // Gemini
+    implementation("com.google.ai.client.generativeai:generativeai:0.3.0")
 }
