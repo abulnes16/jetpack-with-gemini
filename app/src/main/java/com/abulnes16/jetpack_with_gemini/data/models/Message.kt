@@ -3,7 +3,8 @@ package com.abulnes16.jetpack_with_gemini.data.models
 data class Message(
     val content: String,
     val username: String = "",
-    val isMine: Boolean = true
+    val isMine: Boolean = true,
+    val isPending: Boolean = false,
 )
 
 val mockMessages = listOf<Message>(
